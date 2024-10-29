@@ -1,0 +1,48 @@
+{
+    "name": "pavel852/base-php-platform",
+    "description": "A base file for PHP development.",
+    "homepage": "https://github.com/Pavel852/base-php-platform",
+    "keywords": ["php", "base file", "utf-8"],
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Pavel852/base-php-platform"
+        }
+    ],
+    "authors": [
+        {
+            "name": "Pavel Bartos",
+            "email": "pavel.bartos.pb@gmail.com",
+            "orcid": "https://orcid.org/0009-0001-3558-4312",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/Pavel852/base-php-platform",
+        "issues": "https://github.com/Pavel852/base-php-platform/issues",
+        "license": "https://github.com/Pavel852/base-php-platform/blob/main/LICENSE",
+        "docs": "https://github.com/Pavel852/base-php-platform/blob/main/README.md"
+    },
+    "require": {
+        "php": ">=7.0",
+        "composer/installers": "^1.0"       
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php -r \"chmod('./tmp', 0777);\""
+        ]
+    },
+    "extra": {
+        "installer-paths": {
+            "/": ["pavel852/base-php-platform"]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
+
