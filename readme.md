@@ -134,17 +134,17 @@ chmod -R 0777 tmp/
 
 ## Použití
 - Spuštění aplikace:
--- Nastavte $configApp v index.php nebo použijte GET parametr loadapp pro spuštění konkrétní aplikace.
+  - Nastavte $configApp v index.php nebo použijte GET parametr loadapp pro spuštění konkrétní aplikace.
 - Správa cron úloh:
--- Uložte vaše cron skripty do složky ./cron/.
+  - Uložte vaše cron skripty do složky ./cron/.
 - Ukládání dat:
--- Používejte složku ./data/ pro ukládání datových souborů.
+  - Používejte složku ./data/ pro ukládání datových souborů.
 - Includování souborů:
--- Vkládejte sdílené soubory do složky ./inc/.
+  - Vkládejte sdílené soubory do složky ./inc/.
 - Správa knihoven:
--- Ukládejte knihovny do složky ./lib/.
+  - Ukládejte knihovny do složky ./lib/.
 - Dočasné soubory:
--- Všechny dočasné soubory jsou ukládány do složky ./tmp/.
+  - Všechny dočasné soubory jsou ukládány do složky ./tmp/.
 
 ## Autorská práva
 - Autor: PB
