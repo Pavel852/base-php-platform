@@ -1,4 +1,3 @@
-
 # Base PHP Platform
 
 ## Popis projektu
@@ -101,8 +100,8 @@ Hlavní skript `index.php` je zodpovědný za směrování požadavků na správ
 
 5. **Spusťte instalační skript**:
 
--Otevřete index.php ve vašem prohlížeči bez parametru loadapp.
--Nebo použijte následující URL:
+- Otevřete index.php ve vašem prohlížeči bez parametru loadapp.
+- Nebo použijte následující URL:
     ```php
 http://yourdomain.com/index.php
     ```
@@ -134,34 +133,33 @@ chmod -R 0777 tmp/
 
 
 ## Použití
--Spuštění aplikace:
---Nastavte $configApp v index.php nebo použijte GET parametr loadapp pro spuštění konkrétní aplikace.
--Správa cron úloh:
---Uložte vaše cron skripty do složky ./cron/.
--Ukládání dat:
---Používejte složku ./data/ pro ukládání datových souborů.
--Includování souborů:
---Vkládejte sdílené soubory do složky ./inc/.
--Správa knihoven:
---Ukládejte knihovny do složky ./lib/.
--Dočasné soubory:
---Všechny dočasné soubory jsou ukládány do složky ./tmp/.
+- Spuštění aplikace:
+-- Nastavte $configApp v index.php nebo použijte GET parametr loadapp pro spuštění konkrétní aplikace.
+- Správa cron úloh:
+-- Uložte vaše cron skripty do složky ./cron/.
+- Ukládání dat:
+-- Používejte složku ./data/ pro ukládání datových souborů.
+- Includování souborů:
+-- Vkládejte sdílené soubory do složky ./inc/.
+- Správa knihoven:
+-- Ukládejte knihovny do složky ./lib/.
+- Dočasné soubory:
+-- Všechny dočasné soubory jsou ukládány do složky ./tmp/.
 
 ## Autorská práva
--Autor: PB
--Email: pavel.bartos.pb@gmail.com
--Licence: MIT
+- Autor: PB
+- Email: pavel.bartos.pb@gmail.com
+- Licence: MIT
 
 ## Podpora
 Pokud máte jakékoliv otázky nebo potřebujete pomoc, kontaktujte autora na emailu: pavel.bartos.pb@gmail.com.
 
 ## Verze
--Version: 1.0
--Release Date: 10/2024
+- Version: 1.0
+- Release Date: 10/2024
 
 ## Další informace
--Homepage: https://github.com/Pavel852/base-php-platform
--Issues: https://github.com/Pavel852/base-php-platform/issues
--Dokumentace: README.md
--Licence: MIT
-
+- Homepage: https://github.com/Pavel852/base-php-platform
+- Issues: https://github.com/Pavel852/base-php-platform/issues
+- Dokumentace: README.md
+- Licence: MIT
