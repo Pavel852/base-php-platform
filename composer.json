@@ -3,7 +3,7 @@
     "description": "A base file for PHP development.",
     "homepage": "https://github.com/Pavel852/base-php-platform",
     "keywords": ["php", "base file", "utf-8"],
-    "type": "project",
+    "type": "project",  
     "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -36,11 +36,9 @@
             "php -r \"chmod('./tmp', 0777);\""
         ]
     },
-    "extra": {
-        "installer-paths": {
-            "/": ["pavel852/base-php-platform"]
-        }
-    },
+    "bin": [
+        "/index.php" 
+    ],
     "config": {
         "sort-packages": true
     }
