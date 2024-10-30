@@ -40,12 +40,20 @@ $configApp = ''; // Výchozí je prázdný, což spustí instalační skript
 // Pokud chcete spustit konkrétní aplikaci, odkomentujte a nastavte název aplikace:
 // $configApp = 'ExampleApp'; // Příklad nastavení konkrétní aplikace
 
+// Inkluze správce databáze
+require_once DIR_LIB . 'Database.php';
 require_once DIR_LIB . 'function.php';
 
 // Načtení autoloaderu Composeru, pokud existuje
 $composerAutoload = DIR_LIB . 'vendor/autoload.php';
 if (file_exists($composerAutoload)) {
     require_once $composerAutoload;
+}
+
+// Inicializace databázových připojení
+foreach ($databaseConnections['connections'] as $connectionName => $connectionConfig) {
+    $databaseInstance = Database::getInstance($connectionName);
+    ${$connectionName} = $databaseInstance->getConnection();
 }
 
 
@@ -149,7 +157,7 @@ if (!empty($configApp)) {
     }
 }
 
-router_version();
-router_debug();
+//router_version();
+//router_debug();
 ?>
 

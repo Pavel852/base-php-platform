@@ -36,6 +36,7 @@ function router_version() {
  * - Načtené jazykové soubory z ./lang/.
  * - Obsah proměnných $_SESSION, $_POST a $_GET.
  * - Načtené knihovny z vendor pomocí autoload.php.
+ * - Všechny globální proměnné a jejich obsah.
  */
 function router_debug() {
     global $lang, $language;
@@ -104,6 +105,12 @@ function router_debug() {
     } else {
         echo "<p>" . htmlspecialchars($language['debug']['debug_no_vendor_libraries']) . "</p>";
     }
+
+    // Všechny globální proměnné a jejich obsah
+    echo "<h3>" . htmlspecialchars($language['debug']['debug_all_variables']) . "</h3>";
+    echo "<pre>";
+    print_r($GLOBALS);
+    echo "</pre>";
 
     echo "</div>";
 }
