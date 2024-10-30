@@ -175,7 +175,7 @@ http://yourdomain.com/index.php?lang=de
 Pokud máte jakékoliv otázky nebo potřebujete pomoc, kontaktujte autora na emailu: pavel.bartos.pb@gmail.com.
 
 ## Verze
-- Version: 1.0
+- Version: 1.2
 - Release Date: 10/2024
 
 ## Další informace

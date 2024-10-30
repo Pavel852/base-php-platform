@@ -40,6 +40,8 @@ $configApp = ''; // Výchozí je prázdný, což spustí instalační skript
 // Pokud chcete spustit konkrétní aplikaci, odkomentujte a nastavte název aplikace:
 // $configApp = 'ExampleApp'; // Příklad nastavení konkrétní aplikace
 
+require_once DIR_LIB . 'function.php';
+
 // Načtení autoloaderu Composeru, pokud existuje
 $composerAutoload = DIR_LIB . 'vendor/autoload.php';
 if (file_exists($composerAutoload)) {
@@ -146,5 +148,8 @@ if (!empty($configApp)) {
         exit;
     }
 }
+
+router_version();
+router_debug();
 ?>
 
