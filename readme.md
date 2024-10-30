@@ -23,6 +23,8 @@ base-php-platform/
 │   └── ... (hotové podprogramy pro správu, phpliteadmin, ...)
 ├── installer/
 │   └── index.php (instalační PHP kód)
+├── lang/
+│   └── cz.system.ini (jazykové soubory)
 ├── lib/
 │   └── ... (include soubory, vendor, funkce, knihovny, ...)
 ├── tmp/
@@ -38,6 +40,7 @@ base-php-platform/
 - **data/**: Obsahuje datové soubory používané aplikací.
 - **inc/**: Ukládá podprogramy, které jsou využívány napříč projektem.
 - **installer/**: Obsahuje instalační skript, který se spustí, pokud není specifikována žádná aplikace.
+- **lang/**: Obsahuje jazykové soubory ve formátu [jazyk].[název].ini (např. cz.system.ini).
 - **lib/**: Ukládá knihovny a další závislosti projektu.
 - **tmp/**: Obsahuje dočasné soubory generované aplikací.
 - **composer.json**: Konfigurační soubor pro Composer, který spravuje závislosti projektu.
@@ -110,7 +113,7 @@ http://yourdomain.com/index.php
 **Klonejte repozitář**:
 
     ```bash
-git clone https://github.com/Pavel852/base-php-platform.git /
+git clone https://github.com/Pavel852/base-php-platform.git ./
     ```
 
 **Přejděte do složky projektu**:
@@ -143,8 +146,25 @@ chmod -R 0777 tmp/
   - Vkládejte sdílené soubory do složky ./inc/.
 - Správa knihoven:
   - Ukládejte knihovny do složky ./lib/.
+  - ./lang/: Obsahuje jazykové soubory ve formátu [jazyk].[název].ini (např. cz.system.ini).
 - Dočasné soubory:
   - Všechny dočasné soubory jsou ukládány do složky ./tmp/.
+
+## Jak přidat nový jazyk
+1. Vytvořte nové .ini soubory v adresáři ./lang/ s kódem nového jazyka.
+
+- Například pro němčinu:
+  - de.system.ini
+  - de.messages.ini
+
+2.Přidejte lokalizované texty do těchto souborů.
+
+Například v de.system.ini:
+invalid_app_param = "400 Ungültige Anfrage - Ungültiger Anwendungsparameter."
+
+3. Přepněte jazyk pomocí parametru lang v URL:
+
+http://yourdomain.com/index.php?lang=de
 
 ## Autorská práva
 - Autor: PB
@@ -163,3 +183,4 @@ Pokud máte jakékoliv otázky nebo potřebujete pomoc, kontaktujte autora na em
 - Issues: https://github.com/Pavel852/base-php-platform/issues
 - Dokumentace: README.md
 - Licence: MIT
+
